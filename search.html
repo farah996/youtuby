@@ -6,34 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> يوتيوبي/ نتائج البحث </title>
     <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/css 2/search.css">
+    <link rel="stylesheet" href="css/css 2/index.css">
 
 </head>
 
 <body class="mt-5 rtl ">
-    <div id="top-mune">
+    <div class="layer"></div>
+    <div id="top-menu">
         <div class="container-fluid">
+
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
-                <a class="navbar-brand" href="index.html"> يوتيوبي </a>
+                <i class="fas fa-bars fa-lg" id="toggler"></i>
+                <b>
+                   <a class="navbar-brand" href="index.html">
+                       يوتيوبي
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
+                      <span class="video-icon  p-1"> <i class="fas fa-play-circle"></i> </span>
+                    </a>
+                </b>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-lg-auto">
-                        <li class="nav-item active" tabindex="3">
-                            <a class="nav-link" href="index.html"> الفيديوهات المقترحة </a>
+                        <li class="nav-item" tabindex="3">
+                            <a class="nav-link mr-1" href="index.html"> الفيديوهات المقترحة </a>
                         </li>
                         <li class="nav-item" tabindex="4">
                             <a class="nav-link ml-lg-3" href="#"> المرفوعة حديثا </a>
                         </li>
 
                         <li class="nav-item" tabindex="2">
-                            <a class="nav-link pl-0" href="log.html"> سجل المشاهدة</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-outline-warning   d-inline-block" href="#" tabindex="1" data-bs-toggle="modal" data-bs-target="#loginModal"> تسجيل الدخول </a>
+                            <a class="nav-link" href="log.html"> سجل المشاهدة</a>
                         </li>
                     </ul>
 
@@ -42,17 +44,22 @@
                         <button onclick="location. href='search.html';" class="btn btn-outline-warning my-2 my-sm-0" type="submit"> ابحث</button>
                     </div>
                 </div>
+
+                <i class="fas fa-search mr-4 search-icon"></i>
+                <a class="nav-link  login" href="#" tabindex="1" data-bs-toggle="modal" data-bs-target="#loginModal"> تسجيل الدخول </a>
             </nav>
 
-
+            <input type="search" class="form-control search-input" placeholder="ابحث عن ...">
 
             <!-- Modal -->
             <div class="modal fade" id="loginModal" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog   modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel"> تسجيل دخول </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
                         </div>
 
                         <div class="modal-body">
@@ -77,6 +84,61 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- القائمة الجانبية -->
+            <div class="row pt-4">
+                <div id="wrap">
+                    <div class="sidebar">
+                        <ul class="list-group list-group-flush pl-0">
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fab fa-algolia mr-2 purple"></i> الفيديوهات المقترحة
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="far fa-plus-square mr-2 purple"></i> المرفوعة حديثًا
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-fire-alt mr-2 purple"></i> الفيديوهات الرائجة
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-fire-alt mr-2 purple"></i> فيديوهاتي
+                            </a>
+                            <a href="log.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-history mr-2 purple"></i> سجل المشاهدة
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="far fa-share-square mr-2 purple"></i> الإشتراكات
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-film mr-2 purple"></i> الأفلام والعروض
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-gamepad mr-2 purple"></i> ألعاب فيديو
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-tshirt mr-2 purple"></i> الموضة والجمال
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-graduation-cap mr-2 purple"></i> محتوى تعليمي
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-cog mr-2 purple"></i> الإعدادات
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-question-circle mr-2 purple"></i> مساعدة
+                            </a>
+                            <a href="https://academy.hsoub.com/store/1-%D8%AF%D9%88%D8%B1%D8%A9-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85/" class="list-group-item list-group-item-action pb-4">
+                            دورة تطوير واجهات المستخدم<br>
+                            &copy; 2020 أكاديمية حسوب
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -87,7 +149,7 @@
                     حوالي 800 نتيجة
                 </div>
                 <div class="col-6" id="search-filters-icon">
-                    <span class="float-left" id="search-filters-icon"> <i class="fas fa-filter "></i> التصفية </span>
+                    <span class="float-left" id="search-filters-icon"> <i class="fas fa-filter"></i> التصفية </span>
                 </div>
                 <!--قائمة التصفية-->
                 <div class="row mt-4 ">
@@ -184,9 +246,11 @@
             <div class="col-12 my-3">
                 <div class="card">
                     <div class="card-horizontal d-md-flex d-block">
-                        <div class="img-square-wrapper">
+                        <div class="card-icons">
                             <a href="watch.html ">
-                                <img class=" " src="img/thumbnail/devtools.jpg" alt="Card image cap">
+                                <img class="mr-4 card-top-image" src="img/thumbnail/devtools.jpg" alt="Card image cap">
+                                <time>21:42</time>
+                                <i class="fas fa-play fa-2x"></i>
                             </a>
                         </div>
                         <div class="card-body p-3">
@@ -214,9 +278,11 @@
             <div class="col-12 my-3">
                 <div class="card">
                     <div class="card-horizontal d-md-flex d-block">
-                        <div class="img-square-wrapper">
+                        <div class="card-icons">
                             <a href="watch.html">
                                 <img class=" " src="img/thumbnail/mostaql2.png" alt="Card image cap">
+                                <time>5:55</time>
+                                <i class="fas fa-play fa-2x"></i>
                             </a>
                         </div>
                         <div class="card-body p-3">
@@ -244,10 +310,11 @@
             <div class="col-12 my-3">
                 <div class="card">
                     <div class="card-horizontal d-md-flex d-block">
-                        <div class="img-square-wrapper">
+                        <div class="card-icons">
                             <a href="watch.html">
                                 <img class=" " src="img/thumbnail/devtools.jpg" alt="Card image cap">
-
+                                <time>9:42</time>
+                                <i class="fas fa-play fa-2x"></i>
                             </a>
                         </div>
                         <div class="card-body p-3">
@@ -278,10 +345,11 @@
             <div class="col-12 my-3">
                 <div class="card">
                     <div class="card-horizontal d-md-flex d-block">
-                        <div class="img-square-wrapper">
+                        <div class="card-icons">
                             <a href="watch.html">
                                 <img class=" " src="img/thumbnail/khamsat1.png" alt="Card image cap">
-
+                                <time>10:30</time>
+                                <i class="fas fa-play fa-2x"></i>
                             </a>
                         </div>
                         <div class="card-body p-3">
@@ -311,10 +379,11 @@
             <div class="col-12 my-3">
                 <div class="card">
                     <div class="card-horizontal d-md-flex d-block">
-                        <div class="img-square-wrapper">
+                        <div class="card-icons">
                             <a href="watch.html">
                                 <img class=" " src="img/thumbnail/mostaql.png" alt="Card image cap">
-
+                                <time>7:22</time>
+                                <i class="fas fa-play fa-2x"></i>
                             </a>
                         </div>
                         <div class="card-body p-3">
@@ -341,12 +410,13 @@
         </div>
     </div>
 
-
-
-    <script src="https://kit.fontawesome.com/05afd867cf.js" crossorigin="anonymous"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="js/jquery-3.6.0.min.js "></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js "></script>
+    <script src="js/js2/search.js"></script>
+    <script src="js/js2/index.js"></script>
 
 </body>
 
